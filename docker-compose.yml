@@ -12,3 +12,8 @@ services:
       # - ./pb_migrations:/pb/pb_migrations
       # - ./pb_hooks:/pb/pb_hooks
     restart: unless-stopped
+    networks:
+     - showcase-vault-prod-net
+networks:
+  showcase-vault-prod-net:
+    external: true
