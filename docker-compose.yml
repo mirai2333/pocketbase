@@ -13,7 +13,9 @@ services:
       # - ./pb_hooks:/pb/pb_hooks
     restart: unless-stopped
     networks:
-     - showcase-vault-prod-net
+      dokploy-network:
+        aliases:
+          - showcase-vault-pocketbase-internal
 networks:
-  showcase-vault-prod-net:
+  dokploy-network:
     external: true
