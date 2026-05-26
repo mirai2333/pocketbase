@@ -3,8 +3,8 @@ services:
     build: .
     # 如果不想每次都构建，也可以使用预先构建好的镜像（需要你自己推送）
     # image: your-registry/pocketbase:latest
-    ports:
-      - "8080:8080"
+    # ports:
+    #  - "8080:8080"
     volumes:
       # 持久化 PocketBase 数据（pb_data 目录）
       - ../pb_data:/pb/pb_data
